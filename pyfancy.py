@@ -163,7 +163,7 @@ class pyfancy:
                 continue
             elif(stri[i] == "\"):
                 skip = True
-            elif(stri[i] == "{"): 
+            elif(stri[i] == "{" and not seg): 
                 seg = True
                 sec = ""
             elif(stri[i] == "}" and seg):
