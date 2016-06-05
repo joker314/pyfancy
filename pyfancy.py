@@ -155,10 +155,11 @@ class pyfancy:
         
     def run(self, stri): #An initial attempt
         com = ""
+        self = False
         for i in range(len(stri)):
-            if(skip == True):
+            if(skip):
                 skip = False
-                if(stri[i]
+                if(stri[i])
                 continue
             elif(stri[i] == "\"):
                 skip = True
