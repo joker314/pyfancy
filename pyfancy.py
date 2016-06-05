@@ -153,13 +153,39 @@ class pyfancy:
         self.out += "\033[97m" + addition
         return self
         
-    #Alternate between all the colours of the rainbow
+    def run(stri): #An initial attempt
+        com = ""
+        self.out = ""
+        for i in range(len(stri)):
+            if(skip == True):
+                skip = False
+                if(stri[i]
+                continue
+            elif(stri[i] == "\"):
+                skip = True
+            elif(stri[i] == "{"): 
+                seg = True
+                sec = ""
+            elif(stri[i] == "}" and seg):
+                seg = False
+                c = ["multi", "rainbow", "white", "lightcyan", "lightmagenta", "lightblue", "lightyellow", "lightgreen", "lightred", "darkgrey", "lightgrey", "cyan", "magenta", "blue", "yellow", "green", "red", "black","hidden", "invert", "blink", "underlined", "dim", "bold"]
+                if(com.lower() in c):
+                    q = [multi, rainbow, white, lightCyan, lightMagenta, lightBlue, lightYellow, lightGreen, lightRed, darkGrey, cyan, magenta, blue, yellow, green, red, black, hidden, invert, blink, underlined, dim, bold]
+                    self.out += q[c.index(com.lower())(self, stri)
+                    com = ""
+            else:
+                if(stri[i].isspace()):
+                    com = ""
+                else:
+                    com += str[i]
+            
+    #Alternate between all the  colours of the rainbow
     #No orange, replaced with lightRed
     #No purple/violet so I ignored it
     def rainbow(self,addition=""):
         x = 0
         for i in range(len(addition)): 
-            if (addition[i] in [" ", "\t", "\n", "\r"]): x+=1
+            if (addition[i].isspace()): x+=1
             [red, lightRed, yellow, green, lightBlue, blue][(i-x) % 6](self, addition[i])
 
     # Multicolored text
