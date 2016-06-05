@@ -40,115 +40,115 @@ class pyfancy:
 
     # Raw text - i.e. default styling
     def raw(self,addition=""):
-        self.out += "\033[0m" + addition
+        self.out += "\033[0m" + addition + + "\033[0m"
         return self
 
     # Bold text
     def bold(self,addition=""):
-        self.out += "\033[1m" + addition
+        self.out += "\033[1m" + addition + + "\033[0m"
         return self
 
     # Dim text
     def dim(self,addition=""):
-        self.out += "\033[2m" + addition
+        self.out += "\033[2m" + addition + + "\033[0m"
         return self
 
     # Underlined text
     def underlined(self,addition=""):
-        self.out += "\033[4m" + addition
+        self.out += "\033[4m" + addition + "\033[0m"
         return self
 
     # Blinking text
     def blink(self,addition=""):
-        self.out += "\033[5m" + addition
+        self.out += "\033[5m" + addition + "\033[0m"
         return self
 
     # Foreground / background inverted
     def invert(self,addition=""):
-        self.out += "\033[7m" + addition
+        self.out += "\033[7m" + addition + "\033[0m"
         return self
 
     # Hidden text
     def hidden(self,addition=""):
-        self.out += "\033[8m" + addition
+        self.out += "\033[8m" + addition + "\033[0m"
         return self
 
     # Black text
     def black(self,addition=""):
-        self.out += "\033[30m" + addition
+        self.out += "\033[30m" + addition + "\033[0m"
         return self
 
     # Red text
     def red(self,addition=""):
-        self.out += "\033[31m" + addition
+        self.out += "\033[31m" + addition + "\033[0m"
         return self
 
     # Green text
     def green(self,addition=""):
-        self.out += "\033[32m" + addition
+        self.out += "\033[32m" + addition + "\033[0m"
         return self
     
     # Yellow text
     def yellow(self,addition=""):
-        self.out += "\033[33m" + addition
+        self.out += "\033[33m" + addition + "\033[0m"
         return self
 
     # Blue text
     def blue(self,addition=""):
-        self.out += "\033[34m" + addition
+        self.out += "\033[34m" + addition + "\033[0m"
         return self
 
     # Magenta text
     def magenta(self,addition=""):
-        self.out += "\033[35m" + addition
+        self.out += "\033[35m" + addition + "\033[0m"
         return self
 
     # Cyan text
     def cyan(self,addition=""):
-        self.out += "\033[36m" + addition
+        self.out += "\033[36m" + addition + "\033[0m"
         return self
 
     # Light gray text
     def lightGray(self,addition=""):
-        self.out += "\033[37m" + addition
+        self.out += "\033[37m" + addition + "\033[0m"
         return self
 
     # Dark gray text
     def darkGray(self,addition=""):
-        self.out += "\033[90m" + addition
+        self.out += "\033[90m" + addition + "\033[0m"
         return self
 
     # Light red text
     def lightRed(self,addition=""):
-        self.out += "\033[91m" + addition
+        self.out += "\033[91m" + addition + "\033[0m"
         return self
 
     # Light green text
     def lightGreen(self,addition=""):
-        self.out += "\033[92m" + addition
+        self.out += "\033[92m" + addition + "\033[0m"
         return self
 
     # Light yellow text
     def lightYellow(self,addition=""):
-        self.out += "\033[93m" + addition
+        self.out += "\033[93m" + addition + "\033[0m"
         return self
 
     # Light blue text
     def lightBlue(self,addition=""):
-        self.out += "\033[94m" + addition
+        self.out += "\033[94m" + addition + "\033[0m"
         return self
 
     # Light magenta text
     def lightMagenta(self,addition=""):
-        self.out += "\033[95m" + addition
+        self.out += "\033[95m" + addition + "\033[0m"
         return self
 
     # Light cyan text
     def lightCyan(self,addition=""):
-        self.out += "\033[96m" + addition
+        self.out += "\033[96m" + addition + "\033[0m"
         return self
 
     # White text
     def white(self,addition=""):
-        self.out += "\033[97m" + addition
+        self.out += "\033[97m" + addition + "\033[0m"
         return self
