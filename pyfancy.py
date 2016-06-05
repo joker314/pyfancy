@@ -153,9 +153,8 @@ class pyfancy:
         self.out += "\033[97m" + addition
         return self
         
-    def run(stri): #An initial attempt
+    def run(self, stri): #An initial attempt
         com = ""
-        self.out = ""
         for i in range(len(stri)):
             if(skip == True):
                 skip = False
